@@ -1,0 +1,28 @@
+// Breakpoints
+// -------------------------
+$reflex-xs: $small-mobile;
+$reflex-sm: $mobile;
+$reflex-md: $tab-mobile;
+$reflex-lg: $desktop-tab;
+$reflex-xlg: $large-desktop;
+
+$reflex-grid-spacing: 10px;
+
+@import '~reflex-grid/scss/reflex';
+@import './responsive-layout';
+
+.container {
+  &--sm-full-width {
+    @include viewport-is(tab-mobile) {
+      max-width: 100%;
+      padding: 0;
+      width: 100%;
+    }
+  }
+}
+
+.container-full {
+  @include viewport-is(tab-mobile) {
+    padding: 0;
+  }
+}
