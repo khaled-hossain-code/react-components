@@ -1,9 +1,9 @@
 import React from "react"
 
 function DropDownItem(props) {
-  const { leftIcon, rightIcon } = props
+  const { leftIcon, rightIcon, onClick } = props
   return (
-    <div className="drop-down-menu__item">
+    <div className="drop-down-menu__item" onClick={onClick}>
       {leftIcon && (
         <span className="drop-down-menu__left-icon">{leftIcon}</span>
       )}
