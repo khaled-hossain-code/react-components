@@ -16,7 +16,7 @@ function AddNav() {
 
   function calcHeight(el) {
     const height = el.offsetHeight
-    setMenuHeight(height)
+    setMenuHeight(height + 34)
   }
 
   return (
