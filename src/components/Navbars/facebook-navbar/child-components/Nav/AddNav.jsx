@@ -10,7 +10,6 @@ function AddNav() {
   const addNavRef = useRef(null)
 
   useEffect(() => {
-    console.log(addNavRef.current?.firstChild.offsetHeight)
     setMenuHeight(addNavRef.current?.firstChild.offsetHeight)
   }, [])
 
