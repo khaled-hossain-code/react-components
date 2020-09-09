@@ -1,0 +1,37 @@
+$bg: #242526;
+$hover-bg: #525357;
+$border: 1px solid #474a4d;
+$text-color: #dadce1;
+$border-radius: 8px;
+$speed: 0.5s;
+
+.drop-down-menu {
+  position: absolute;
+  top: 100%;
+  width: 300px;
+  background: $bg;
+  border: $border;
+  border-radius: $border-radius;
+  transform: translateX(-45%);
+  padding: 1rem;
+  overflow: hidden;
+
+  &__item {
+    height: 50px;
+    border-radius: $border-radius;
+    color: $text-color;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    transition: background 0.3s ease-in;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $hover-bg;
+    }
+  }
+
+  &__right-icon {
+    margin-left: auto;
+  }
+}
