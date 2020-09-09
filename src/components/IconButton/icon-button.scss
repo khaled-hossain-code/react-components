@@ -1,0 +1,15 @@
+.icon-button {
+  border-radius: 50%;
+  background-color: #48414d;
+  padding: 5px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+}
