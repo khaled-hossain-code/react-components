@@ -28,3 +28,14 @@
   height: $height;
   width: $width;
 }
+
+@mixin reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset-anchor($color) {
+  color: $color;
+  text-decoration: none;
+}
