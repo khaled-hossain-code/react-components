@@ -7,7 +7,6 @@ $nav-size: 60px;
 $border: 1px solid #474a4d;
 $border-radius: 8px;
 $speed: 0.5s;
-$menu-transition: all 0.5 ease-in;
 
 .facebook-navbar {
   height: $nav-size;
@@ -34,7 +33,7 @@ $menu-transition: all 0.5 ease-in;
 
   &__add-nav {
     .drop-down-menu {
-      transition: all 0.5s ease-in;
+      transition: height 0.5s ease-in;
     }
   }
 
@@ -46,7 +45,7 @@ $menu-transition: all 0.5 ease-in;
 
     &-enter-active {
       transform: translateX(0%);
-      transition: $menu-transition;
+      transition: transform 500ms;
     }
 
     &-exit {
@@ -55,7 +54,7 @@ $menu-transition: all 0.5 ease-in;
 
     &-exit-active {
       transform: translateX(-110%);
-      transition: $menu-transition;
+      transition: transform 500ms;
     }
   }
 
@@ -66,7 +65,7 @@ $menu-transition: all 0.5 ease-in;
 
     &-enter-active {
       transform: translateX(0%);
-      transition: $menu-transition;
+      transition: transform 500ms;
     }
 
     &-exit {
@@ -74,7 +73,7 @@ $menu-transition: all 0.5 ease-in;
 
     &-exit-active {
       transform: translateX(110%);
-      transition: $menu-transition;
+      transition: transform 500ms;
     }
   }
 }
